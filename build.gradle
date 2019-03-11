@@ -16,5 +16,7 @@ dependencies {
     compile 'net.sf.json-lib:json-lib:2.4:jdk15'
     compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
     compile 'org.json:json:20140107'
-    compile 'org.apache.poi:poi:4.0.1'
+    compile 'org.apache.poi:poi:3.9'
+    compile 'org.apache.poi:poi-ooxml:3.9'
+    compile 'mysql:mysql-connector-java:5.1.25'
 }

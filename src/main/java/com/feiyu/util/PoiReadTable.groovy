@@ -1,6 +1,9 @@
 package com.feiyu.util
 
 import com.feiyu.db.GroovyJDBC
+import org.apache.poi.xssf.usermodel.XSSFRow
+import org.apache.poi.xssf.usermodel.XSSFSheet
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 /**
  * 读取上篇中的xls文件的内容，并打印出来
@@ -19,7 +22,7 @@ class PoiReadTable {
 		int rowLength = sheet._rows.size()
 		for (int i = 1; i < rowLength; i++) {
 			XSSFRow row = (XSSFRow) sheet.getRow(i)
-			if ("示例".equals(row.getCell(0).toString()) || ''.equals(row.getCell(0).toString())) {
+			if ("示例".equals(row.getCell(0).toString()) || ''.equals(row.getCell(0).toString()) || null == row.getCell(0)) {
 				continue
 			}
 			// 插入db
