@@ -8,4 +8,6 @@ json及excel数据通过groovy脚本入库mysql
  
        *XSSF读取Excel2007
        *HSSF读取Excel2003
+       *从windows导出的excel，需要再mac中新建excel并copy进入，再导入db【原因可能为：office 平台差异】
+       
  
