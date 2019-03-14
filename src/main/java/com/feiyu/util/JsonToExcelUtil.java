@@ -19,16 +19,16 @@ import java.util.Iterator;
  * Created by zdy on 11/03/2019
  */
 public class JsonToExcelUtil {
-	public static final String mavenInfos = JsonConvert.getJsonString();
+//	public static final String mavenInfos = JsonConvert.getJsonString();
 
-	public static void parseJsonToExcel(String saveFileName, String rootNodeName, String sourceJson) {
+	public static void parseJsonToExcel(String saveFileName, String sourceJson) {
 		try {
 			File filewrite = new File(saveFileName);
 			filewrite.createNewFile();
 			OutputStream os = new FileOutputStream(filewrite);
 			JSONArray jsonArray = JSONArray.fromObject(sourceJson);
 //            正常json转换
-			createExcelByJsonArray(os, jsonArray, rootNodeName);
+			createExcelByJsonArray(os, jsonArray);
 			System.out.println("解析完毕");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -45,7 +45,7 @@ public class JsonToExcelUtil {
 	 * @throws WriteException
 	 * @throws IOException
 	 */
-	public static void createExcelByJsonArray(OutputStream os, JSONArray jsonArray, String rootNodeName) throws WriteException, IOException {
+	public static void createExcelByJsonArray(OutputStream os, JSONArray jsonArray) throws WriteException, IOException {
 		//创建工作薄
 		WritableWorkbook workbook = Workbook.createWorkbook(os);
 		//创建新的一页

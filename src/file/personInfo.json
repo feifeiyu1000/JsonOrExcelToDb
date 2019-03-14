@@ -1,0 +1,51 @@
+[{
+		"contract.endDate": "",
+		"person.indexOf": 9999999,
+		"position.name": "董事长",
+		"person.name": "刘二文",
+		"person.gender": {
+			"isenum": true,
+			"alias": "男",
+			"value": 1,
+			"name": "Male"
+		},
+		"contract.effectDate": "",
+		"person.id": "LuMAAAAAMlyA733t",
+		"contractType.name": "",
+		"contract.contractLimitType": "",
+		"diploma.name": "大学本科",
+		"pp.enterDate": "2014-10-01 00:00:00",
+		"position.index": -1,
+		"adminOrgUnit.name": "董事会",
+		"adminOrgUnit.sortCode": "0!001!001",
+		"empType.name": "合同",
+		"_row_index": 0,
+		"person.number": "000001",
+		"empOrgRelation.id": "k0EyBUxQSu+uSNClxzZchCkoiSk=",
+		"position.number": "10101"
+	}, {
+		"contract.endDate": "",
+		"person.indexOf": 9999999,
+		"position.name": "副董事长",
+		"person.name": "王培清",
+		"person.gender": {
+			"isenum": true,
+			"alias": "男",
+			"value": 1,
+			"name": "Male"
+		},
+		"contract.effectDate": "",
+		"person.id": "LuMAAAAAMmOA733t",
+		"contractType.name": "",
+		"contract.contractLimitType": "",
+		"diploma.name": "大学专科",
+		"pp.enterDate": "2012-01-04 00:00:00",
+		"position.index": 9999999,
+		"adminOrgUnit.name": "董事会",
+		"adminOrgUnit.sortCode": "0!001!001",
+		"empType.name": "合同",
+		"_row_index": 1,
+		"person.number": "000002",
+		"empOrgRelation.id": "4luH6FgPSB2Zdu/4nbuacikoiSk=",
+		"position.number": "1010102"
+	}]

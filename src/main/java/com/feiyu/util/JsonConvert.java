@@ -14,12 +14,13 @@ public class JsonConvert {
 	 *
 	 * @return
 	 */
-	public static String getJsonString() {
+	public static String getJsonString(String pathName) {
 		// 读取原始json文件并进行操作和输出
 		JSONArray dataJson = null;
 		String laststr = "";
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("/Users/xxxx/Desktop/test.json"));// 读取原始json文件
+//			BufferedReader br = new BufferedReader(new FileReader("/Users/xxxx/Desktop/test.json"));// 读取原始json文件
+			BufferedReader br = new BufferedReader(new FileReader(pathName));// 读取原始json文件
 			String tempString;
 			while ((tempString = br.readLine()) != null) {
 				laststr += tempString;
